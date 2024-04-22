@@ -54,7 +54,7 @@ async function registerUser(event)
   let fname = document.getElementById("firstName").value;
   let lname = document.getElementById("lastName").value;
   let dob = document.getElementById("dob").value;
-  let aadharNo = document.getElementById("aadharNo").value;
+  let nidNo = document.getElementById("nidNo").value;
 
   
 
@@ -74,7 +74,7 @@ async function registerUser(event)
 
       showTransactionLoading("Registering User....");
 
-      window.result = await contract.methods.registerUser(fname,lname,dob,aadharNo)
+      window.result = await contract.methods.registerUser(fname,lname,dob,nidNo)
                                             .send({from:accountUsedToLogin});
       
 

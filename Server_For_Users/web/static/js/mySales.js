@@ -89,7 +89,7 @@ async function fetchUserDetails() {
 
     // document.getElementById("dob").innerText = userDetails["dateOfBirth"];
 
-    // document.getElementById("aadharNumber").innerText = userDetails["aadharNumber"];
+    // document.getElementById("nidNumber").innerText = userDetails["nidNumber"];
   }
   else {
     alert("Account Not Found !! Please Login again")
